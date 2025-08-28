@@ -135,6 +135,7 @@
 
         /* Navigation */
         /* Base styles (mobile-first) */
+/* Base styles: always horizontal, no wrapping */
 nav {
     position: fixed;
     top: 0;
@@ -148,29 +149,16 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: row;  /* Stack links vertically on small screens */
+    flex-direction: row;   /* Horizontal layout for all screen sizes */
+    justify-content: center; /* Center items */
     align-items: center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0;
     margin: 0;
+    flex-wrap: nowrap;  /* No wrapping on small screens */
 }
 
-/* Desktop styles */
-@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;   /* Horizontal layout on larger screens */
-        justify-content: center;
-        gap: 2rem;
-    }
-}
-@media (min-width: 320px) {
-    nav ul {
-        flex-direction: row;   /* Horizontal layout on larger screens */
-        justify-content: center;
-        gap: 2rem;
-    }
-}
 nav a {
     color: var(--text-primary);
     text-decoration: none;
@@ -198,6 +186,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
+
 
 
         /* Hero Section */
@@ -542,5 +531,6 @@ nav a:hover::after {
         }
 
         /* Bug Animation - Removed */
+
 
 
