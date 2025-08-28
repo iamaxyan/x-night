@@ -135,7 +135,7 @@
 
         /* Navigation */
         nav {
-            position: fixed;
+            position: not fixed;
             top: 0;
             width: 100%;
             padding: 1rem 5%;
@@ -520,5 +520,6 @@
                 font-size: 1.2rem;
             }
         }
+
 
         /* Bug Animation - Removed */
