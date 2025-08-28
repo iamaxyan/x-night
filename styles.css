@@ -164,7 +164,13 @@ nav ul {
         gap: 2rem;
     }
 }
-
+@media (min-width: 320px) {
+    nav ul {
+        flex-direction: row;   /* Horizontal layout on larger screens */
+        justify-content: center;
+        gap: 2rem;
+    }
+}
 nav a {
     color: var(--text-primary);
     text-decoration: none;
@@ -536,3 +542,4 @@ nav a:hover::after {
         }
 
         /* Bug Animation - Removed */
+
