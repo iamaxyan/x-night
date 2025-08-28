@@ -148,7 +148,7 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: column;  /* Stack links vertically on small screens */
+    flex-direction: row;  /* Stack links vertically on small screens */
     align-items: center;
     list-style: none;
     gap: 1rem;
@@ -542,4 +542,5 @@ nav a:hover::after {
         }
 
         /* Bug Animation - Removed */
+
 
