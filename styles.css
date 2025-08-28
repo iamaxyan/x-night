@@ -136,9 +136,11 @@
         /* Navigation */
         /* Base styles (mobile-first) */
 /* Base styles: always horizontal, no wrapping */
+/* Base styles for horizontal nav */
 nav {
     position: fixed;
     top: 0;
+    left: 0; /* Ensure it's aligned to the left side */
     width: 100%;
     padding: 1rem 5%;
     background: rgba(26, 26, 46, 0.9);
@@ -148,15 +150,14 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;   /* Horizontal layout for all screen sizes */
-    justify-content: center; /* Center items */
-    align-items: center;
+    display: flex; /* Horizontal layout */
+    flex-direction: row;   /* Ensure items are aligned horizontally */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;  /* Vertically align items */
     list-style: none;
     gap: 2rem;
     padding: 0;
     margin: 0;
-    flex-wrap: nowrap;  /* No wrapping on small screens */
 }
 
 nav a {
@@ -531,6 +532,7 @@ nav a:hover::after {
         }
 
         /* Bug Animation - Removed */
+
 
 
 
